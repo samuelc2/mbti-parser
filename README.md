@@ -28,5 +28,6 @@ Semantics: What something means
 4. We facilitate class methods by defining them on the singleton_class of the class object, thereby keeping them out of the ancestor chain of instances of that class
 
 NEXT:
-Implement a Syntactic rule
+implement semantic interpreter for well structured mbti abbreviations
 
+consider changing syntax and alphabet validations to being class methods instead of objects on the parser
