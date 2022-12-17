@@ -10,8 +10,10 @@ class MBTiParser
     end
 
     def parse(input)
-        puts "Alphabet is valid: " + @alphabet.valid?(input).to_s
-        puts "Syntax is valid: " + @syntax.valid?(input).to_s
-        puts "VALID EXPRESSION" if @alphabet.valid?(input) && @syntax.valid?(input)
+        alphabet_result = @alphabet.valid?(input)
+        syntax_result = @syntax.valid?(input)
+        puts "Alphabet is valid: #{alphabet_result}"
+        puts "Syntax is valid: #{syntax_result}"
+        puts "VALID EXPRESSION" if  alphabet_result && syntax_result 
     end
 end
