@@ -1,18 +1,17 @@
-require './alphabet/alphabet.rb'
-require './syntax/syntax.rb'
+require_relative './alphabet/alphabet.rb'
+require_relative './syntax/syntax.rb'
 
 class MBTiParser
 
+
     def initialize()
         @alphabet = Alphabet.new
+        @syntax = Syntax.new
     end
 
     def parse(input)
-        # validate input is a word over the alphabet
-        @alphabet.valid?(input)
-
-        # validate syntax
-        valid_syntax?(input)
-
+        puts "Alphabet is valid: " + @alphabet.valid?(input).to_s
+        puts "Syntax is valid: " + @syntax.valid?(input).to_s
+        puts "VALID EXPRESSION" if @alphabet.valid?(input) && @syntax.valid?(input)
     end
 end
