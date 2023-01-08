@@ -14,7 +14,7 @@ Syntax: What something looks like
         5. Fourth character is in the subset of alphabet { P, J }
 
 Semantics: What something means
-    - The function stack, i.e the semantics of the abbreviation INTJ -> Ni, Te, Si, Fe
+    - The function stack, i.e the semantics of the abbreviation INTJ -> Ni, Te, Fi, Se
 
 
 ----------------------------------------------------
